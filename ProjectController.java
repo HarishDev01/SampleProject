@@ -38,7 +38,7 @@ public class ProjectController {
        Optional<Student> skuList = service.getByItem(id); // Assuming service.getByItem returns List<SkuProfile>
         System.out.println("Student -Id  "+id);
        return skuList.orElse(null);
-    }
+    } 
 
     @PostMapping("/addItem")
     public ResponseEntity<SkuProfile> createItem(@RequestBody SkuProfile skuProfile) {
